@@ -2,7 +2,11 @@
 <html lang="en">
 <head>
    <meta charset="UTF-8">
-   <title>Title</title>
+   <title>Grades</title>
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
+   <link href="index.css" rel="stylesheet"/>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 <body>
 
@@ -13,132 +17,292 @@
       <tr>
    
        <!--Links of courses cell-->
-          <td valign="top">
-            <ul>
-               <li><a href="profileselect.html">Account</a></li>
-               <li><a href="#">Dashboard</a></li>
-               <li><a href="courses.html">Courses</a></li>
-               <li><a href="#">Calendar</a></li>
-               <li><a href="#">Inbox</a></li>
-               <li><a href="#">History</a></li>
-               <li><a href="#">Studio</a></li>
-               <li><a href="#">Commons</a></li>
-               <li><a href="#">Help</a></li>
-           </ul>
-   
-          </td>
-   
-   
-       <!--Links of this course cell-->
-          <td valign="top">
-            <ul>
-               <li><a href="home.html">Home</a></li>
-               <li><a href="#">Modules</a></li>
-               <li><a href="#">Piazza</a></li>
-               <li><a href="#">Zoom Meetings</a></li>
-               <li><a href="assignments/index.html">Assignments</a></li>
-               <li><a href="#">Quizzes</a></li>
-               <li><a href="grades.html">Grades</a></li>
-               <li><a href="#">People</a></li>
-               <li><a href="#">Panopto Video</a></li>
-               <li><a href="#">Discussions</a></li>
-               <li><a href="#">Announcements</a></li>
-               <li><a href="#">Pages</a></li>
-               <li><a href="#">Files</a></li>
-               <li><a href="#">Rubrics</a></li>
-               <li><a href="#">Outcomes</a></li>
-               <li><a href="#">Collaborations</a></li>
-               <li><a href="#">Syllabus</a></li>
-               <li><a href="#">Settings</a></li>
-           </ul>
-
-
-          </td>
-   
-   
-       <!--Grades cell-->
-          <td valign="top">
-            <select>
-                <option selected value="GRADEBOOK">
-                    Gradebook</option>
-                <option value="OTHER">Other</option>
-            </select>
-
-            <button>Import</button>
-            <select>
-                <option selected value="EXPORT">
-                    Export</option>
-                <option value="OTHER">Other</option>
-            </select>
-            <button>Configure</button>
-
-            <h2>Student Names</h2>
-            <input placeholder="Search Students"/>
-            <br/>
-            <h2>Assignment Names</h2>
+        <td valign="top" class="d-none d-lg-table-cell sidebar-dimension bg-black" style="background-color: black; height: 100%;">
+            <ul class="list-group bg-black sidebar-dimension">
             
-            <input placeholder="Search Assignments"/>
-            <br/>
-            <br/>
+                <a href="profile/index.html"><li class="padding-5 verdana-font list-group-item list-group-item-action bg-black"><i class="margin-5 fa-solid fa-user" style="color: white"></i> <br> Account</li></a>
+            
+                <a href="dashboard.html"><li class="padding-5 verdana-font list-group-item list-group-item-action bg-black"><i class="margin-5 fa-solid fa-gauge" style="color: red"></i> <br> Dashboard</li></a>
+            
+                <a href="home.html"><li class="padding-5 verdana-font list-group-item list-group-item-action bg-white" style="color: red;"><i class="margin-5 fa-solid fa-book" style="color: red"></i> <br> Courses</li></a>
+            
+                <a href="#"><li class="padding-5 verdana-font list-group-item list-group-item-action bg-black"><i class="margin-5 fa-solid fa-calendar" style="color: red"></i> <br> Calendar</li></a>
+            
+                <a href="#"><li class="padding-5 verdana-font list-group-item list-group-item-action bg-black"><i class="margin-5 fa-solid fa-inbox" style="color: red"></i> <br> Inbox</li></a>
+            
+                <a href="#"><li class="padding-5 verdana-font list-group-item list-group-item-action bg-black"><i class="margin-5 fa-solid fa-clock" style="color: red"></i><br> History</li></a>
+            
+                <a href="#"><li class="padding-5 verdana-font list-group-item list-group-item-action bg-black"><i class="margin-5 fa-solid fa-robot" style="color: red"></i><br> Studio</li></a>
+            
+                <a href="#"><li class="padding-5 verdana-font list-group-item list-group-item-action bg-black"><i class="margin-5 fa-solid fa-arrow-right-from-bracket" style="color: red"></i><br> Commons</li></a>
+            
+                <a href="#"><li class="padding-5 verdana-font list-group-item list-group-item-action bg-black"><i class="margin-5 fa-solid fa-circle-question" style="color: red"></i><br> Help</li></a>
+            </ul>
 
-            <button>Apply Filters</button>
-            <br/>
-            <br/>
+        </td>
+   
+   
 
-            <table border="1" width="100%">
-                <thead>
-                <tr>
-                    <th>Student Name</th>
-                    <th>A1 INTRO out of 5</th>
-                    <th>A2 HTML out of 5</th>
-                    <th>A3 CSS out of 5</th>
-                    <th>A4 BOOTSTRAP out of 5</th>
-                </tr>
-                </thead>
+        <td valign="top">
+            
+        <!--NAV BAR-->
+         <nav class="d-none d-lg-block" style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+            <div class="row no-margins">
+               <a href="#" class="col-1 mt-1 text-center"><i class="fa-solid fa-bars text-center" style="color: red; display: inline;"></i></a>
+               
+            
+               <ol class="breadcrumb col no-margins mt-1">
+                 <li class="breadcrumb-item"><a href="home.html" style="color: red;">CS4550.12631.202410</a></li>
+                 <li class="breadcrumb-item active" aria-current="page" style="color: black;">Grades</li>
+               </ol>
+
+            </div>
+            
+         </nav>
+
+
+         <!--NAV BAR DARK < LG SCREENS-->
+         <nav class="d-lg-none" style="--bs-breadcrumb-divider: '>'; background-color: black;" aria-label="breadcrumb">
+            <div class="row no-margins pb-3 pt-3">
+
+               <div class="dropdown col-1 me-3">
+                  <a href="#" class="btn text-center"
+                  role="button" data-bs-toggle="dropdown">
+                     <i class="fa-solid fa-bars text-center fa-2x" style="color: white; display: inline;"></i></a>
+
+                     <!--BASE NAVIGATION-->
+                     <ul class="mt-3 dropdown-menu full-dropdown-menu navigation-dimension no-dots no-padding">
+                        <li class="li-account-navi mb-4"><a href="dashboard.html" class="navigation-sidebar-text">
+                           <i class="margin-5 fa-solid fa-gauge" style="color: red"></i> Dashboard</a></li>
+                        <li class="li-account-navi mb-4"><a href="profile/index.html" class="navigation-sidebar-text">
+                           <i class="margin-5 fa-solid fa-user" style="color: red"></i> Account</a></li>
+                        <li class="li-account-navi mb-4"><a href="home.html" class="navigation-sidebar-text">
+                           <i class="margin-5 fa-solid fa-book" style="color: red"></i> Courses</a></li>
+                        <li class="li-account-navi mb-4"><a href="#" class="navigation-sidebar-text">
+                           <i class="margin-5 fa-solid fa-calendar" style="color: red"></i> Calendar</a></li>
+                        <li class="li-account-navi mb-4"><a href="#" class="navigation-sidebar-text">
+                           <i class="margin-5 fa-solid fa-inbox" style="color: red"></i> Inbox</a></li>
+                        <li class="li-account-navi mb-4"><a href="#" class="navigation-sidebar-text">
+                           <i class="margin-5 fa-solid fa-robot" style="color: red"></i> Studio</a></li>
+                        <li class="li-account-navi mb-4"><a href="#" class="navigation-sidebar-text">
+                           <i class="margin-5 fa-solid fa-arrow-right-from-bracket" style="color: red"></i> Commons</a></li>
+                        <li class="li-account-navi mb-4"><a href="#" class="navigation-sidebar-text">
+                           <i class="margin-5 fa-solid fa-clock" style="color: red"></i> History</a></li>
+                        <li class="li-account-navi"><a href="#" class="navigation-sidebar-text">
+                           <i class="margin-5 fa-solid fa-circle-question" style="color: red"></i> Help</a></li>
+                        
+                     </ul>
+               </div>
+
+
+               <div class="col no-margins mt-1 text-center" style="color: white;">
+                  <div style="font-size: 14px;">CS4550.12631.202410</div>
+                  <div style="font-size: 14px;">Grades</div>
+               </div>
+               
+
+               
+               <div class="dropdown col-1 me-3">
+                  <a href="#" class="btn text-center"
+                  role="button" data-bs-toggle="dropdown">
+                     <i class="fa-solid fa-chevron-down text-center" style="color: white; display: inline;"></i></a>
+                  
+                     <!--COURSE NAVIGATION-->
+                     <ul class="mt-4 dropdown-menu full-dropdown-menu navigation-dimension no-dots no-padding">
+                        <li class="li-account-navi"><a href="home.html" class="navigation-sidebar-text">Home</a></li>
+                        <li class="li-account-navi"><a href="#" class="navigation-sidebar-text">Modules</a></li>
+                        <li class="li-account-navi"><a href="#" class="navigation-sidebar-text">Piazza</a></li>
+                        <li class="li-account-navi"><a href="#" class="navigation-sidebar-text">Zoom Meetings</a></li>
+                        <li class="li-account-navi"><a href="assignments/index.html" class="navigation-sidebar-text">Assignments</a></li>
+                        <li class="li-account-navi"><a href="#" class="navigation-sidebar-text">Quizzes</a></li>
+                        <li class="li-account-navi selected"><a href="grades.html" class="navigation-sidebar-text selected-text">Grades</a></li>
+                        <li class="li-account-navi"><a href="#" class="navigation-sidebar-text">People</a></li>
+                        <li class="li-account-navi"><a href="#" class="navigation-sidebar-text">Panopto Video</a></li>
+                        <li class="li-account-navi"><a href="#" class="navigation-sidebar-text">Discussions</a></li>
+                        <li class="li-account-navi"><a href="#" class="navigation-sidebar-text">Announcements</a></li>
+                        <li class="li-account-navi"><a href="#" class="navigation-sidebar-text">Pages</a></li>
+                        <li class="li-account-navi"><a href="#" class="navigation-sidebar-text">Files</a></li>
+                        <li class="li-account-navi"><a href="#" class="navigation-sidebar-text">Rubrics</a></li>
+                        <li class="li-account-navi"><a href="#" class="navigation-sidebar-text">Outcomes</a></li>
+                        <li class="li-account-navi"><a href="#" class="navigation-sidebar-text">Collaborations</a></li>
+                        <li class="li-account-navi"><a href="#" class="navigation-sidebar-text">Syllabus</a></li>
+                        <li class="li-account-navi"><a href="#" class="navigation-sidebar-text">Settings</a></li>
+                     </ul>
+               </div>
+            </div>
+            
+         </nav>
+
+
+
+
+
+             <!--END NAV BAR END NAV BAR-->
+             <hr>
+    
+            <table width="100%">
                 <tbody>
                 <tr>
-                    <td>David</td>
-                    <td>1</td>
-                    <td>2</td>
-                    <td><input type="number"
-                        placeholder="0"
-                        value="3"/></td>
-                    <td>4</td>
-                </tr>
-                <tr>
-                    <td>Joy</td>
-                    <td>5</td>
-                    <td><input type="number"
-                        placeholder="0"
-                        value="5"/></td>
-                    <td>5</td>
-                    <td>5</td>
-                </tr>
-                <tr>
-                    <td>Frank</td>
-                    <td>3</td>
-                    <td><input type="number"
-                        placeholder="0"
-                        value="2"/></td>
-                    <td>4</td>
-                    <td>3</td>
-                </tr>
-                <tr>
-                    <td>Noah</td>
-                    <td>0</td>
-                    <td><input type="number"
-                        placeholder="0"
-                        value="0"/></td>
-                    <td>0</td>
-                    <td>0</td>
+
+
+                    <!--Links of this course cell-->
+                
+                    <td valign="top" class="d-none d-lg-table-cell navigation-dimension" style="padding-left: 20px;">
+                            
+                        <ul class="navigation-dimension no-dots no-padding">
+                        <li class="li-account-navi"><a href="home.html" class="navigation-sidebar-text">Home</a></li>
+                        <li class="li-account-navi"><a href="#" class="navigation-sidebar-text">Modules</a></li>
+                        <li class="li-account-navi"><a href="#" class="navigation-sidebar-text">Piazza</a></li>
+                        <li class="li-account-navi"><a href="#" class="navigation-sidebar-text">Zoom Meetings</a></li>
+                        <li class="li-account-navi"><a href="assignments/index.html" class="navigation-sidebar-text">Assignments</a></li>
+                        <li class="li-account-navi"><a href="#" class="navigation-sidebar-text">Quizzes</a></li>
+                        <li class="li-account-navi selected"><a href="grades.html" class="navigation-sidebar-text selected-text">Grades</a></li>
+                        <li class="li-account-navi"><a href="#" class="navigation-sidebar-text">People</a></li>
+                        <li class="li-account-navi"><a href="#" class="navigation-sidebar-text">Panopto Video</a></li>
+                        <li class="li-account-navi"><a href="#" class="navigation-sidebar-text">Discussions</a></li>
+                        <li class="li-account-navi"><a href="#" class="navigation-sidebar-text">Announcements</a></li>
+                        <li class="li-account-navi"><a href="#" class="navigation-sidebar-text">Pages</a></li>
+                        <li class="li-account-navi"><a href="#" class="navigation-sidebar-text">Files</a></li>
+                        <li class="li-account-navi"><a href="#" class="navigation-sidebar-text">Rubrics</a></li>
+                        <li class="li-account-navi"><a href="#" class="navigation-sidebar-text">Outcomes</a></li>
+                        <li class="li-account-navi"><a href="#" class="navigation-sidebar-text">Collaborations</a></li>
+                        <li class="li-account-navi"><a href="#" class="navigation-sidebar-text">Syllabus</a></li>
+                        <li class="li-account-navi"><a href="#" class="navigation-sidebar-text">Settings</a></li>
+                        </ul>
+
+
+                    </td>
+
+
+
+
+
+                    <!--Grades cell-->
+                    <td valign="top">
+                        
+                        <div>
+                            <button class="float-end ms-2 me-2 btn btn-light" style="border-color:  black;"><i class="fa-solid fa-gear"></i></button>
+                            <!--DROPDOWN-->
+                            <div class="float-end ms-2 dropdown">
+                                <button class="btn btn-light dropdown-toggle"  style="border-color:  black;" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <i class="fa-solid fa-file-export"></i> Export
+                                </button>
+                                <ul class="dropdown-menu">
+                                  <li><a class="dropdown-item" href="#">Export</a></li>
+                                  <li><a class="dropdown-item" href="#">Other</a></li>
+                                </ul>
+                            </div>
+                            
+                            <button class="float-end btn btn-light" style="border-color:  black;"><i class="fa-solid fa-file-import"></i> Import</button>
+                            <div style="clear: both;"></div>
+                        </div>
+                        
+                        
+                        <div class="container">
+
+                            <div class="row me-2">
+                                <label class="col no-padding form-label me-3" style="font-weight:bold;">Student Names</label>
+                                
+                                <label class="col no-padding form-label" style="font-weight:bold;">Assignment Names</label>
+
+                            </div>
+
+                            <div class="row me-2">
+
+                                <div class="input-group me-3 col no-padding">
+                                    <button class="btn btn-outline-secondary" type="button"><i class="fa-solid fa-magnifying-glass"></i></button>
+                                    <select class="form-select col">
+                                        <option selected>Search Students</option>
+                                        <option value="Other">Other</option>
+                                    </select>
+                                </div>
+
+                                
+                                <div class="input-group col no-padding">
+                                    <button class="btn btn-outline-secondary" type="button"><i class="fa-solid fa-magnifying-glass"></i></button>
+                                    <select class="form-select col">
+                                        <option selected>Search Assignments</option>
+                                        <option value="Other">Other</option>
+                                    </select>
+                                </div>
+
+                                
+
+
+                            </div>
+
+
+
+
+                        </div>                        
+
+                        
+                        <button type="button" class="btn btn-light mt-3" style="border-color:  black;"><i class="fa-solid fa-filter"></i> Apply Filters</button>
+                        
+                        
+                        <table class="table table-responsive mt-3" border="1" style="text-align: center;">
+                            <thead>
+                            <tr class="table-secondary">
+                                <th> <div class="ps-2" style="font-size: 14px; text-align: left;">Student Name</div></th>
+                                <th> <div style="font-weight: normal; font-size: 16px;" >A1 INTRO <br> Out of 100</div></th>
+                                <th><div style="font-weight: normal; font-size: 16px;" >A2 HTML <br> Out of 100</div></th>
+                                <th><div style="font-weight: normal; font-size: 16px;" >A3 CSS <br> Out of 100</div></th>
+                                <th><div style="font-weight: normal; font-size: 16px;" >A4 BOOTSTRAP <br> Out of 100</div></th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td class="ps-3" style="text-align: left;">David</td>
+                                <td>1</td>
+                                <td>2</td>
+                                <td><input class="form-control w-25" type="number"
+                                    placeholder="0"
+                                    value="3"
+                                    style="text-align: center; display: inline-table;"/></td>
+                                <td>4</td>
+                            </tr>
+                            <tr class="table-secondary">
+                                <td class="ps-3" style="text-align: left;">Joy</td>
+                                <td>5</td>
+                                <td><input class="form-control w-25" type="number"
+                                    placeholder="0"
+                                    value="5"
+                                    style="text-align: center; display: inline-table;"/></td>
+                                <td>5</td>
+                                <td>5</td>
+                            </tr>
+                            <tr>
+                                <td class="ps-3" style="text-align: left;">Frank</td>
+                                <td>3</td>
+                                <td><input class="form-control w-25" type="number"
+                                    placeholder="0"
+                                    value="2"
+                                    style="text-align: center; display: inline-table;"/></td>
+                                <td>4</td>
+                                <td>3</td>
+                            </tr>
+                            <tr class="table-secondary">
+                                <td class="ps-3" style="text-align: left;">Noah</td>
+                                <td>0</td>
+                                <td><input class="form-control w-25" type="number"
+                                    placeholder="0"
+                                    value="0"
+                                    style="text-align: center; display: inline-table;"/></td>
+                                <td>0</td>
+                                <td>0</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                        
+                    </td>
+
                 </tr>
                 </tbody>
-             </table>
+            </table> 
 
-
-
-
-          </td>
+   
+   
+       
 
       </tr>
       </tbody>

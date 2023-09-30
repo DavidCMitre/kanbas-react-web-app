@@ -1,0 +1,106 @@
+.sidebar-dimension {
+    width: 83px;
+    
+    
+ }
+
+
+ a {
+    text-decoration: none;
+  
+  }
+
+ .verdana-font {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+    text-align: center;
+    color: white;
+ }
+
+ .margin-5 {
+    margin: 5px;
+    
+ }
+
+ .padding-5 {
+    padding: 5px;
+ }
+
+ .navigation-sidebar-text {
+    text-align: left;
+    color:red;
+    font-size: 18px;
+    
+ }
+
+
+ .navigation-dimension {
+    width: 190px;
+
+    
+ }
+
+ .selected {
+    border-left: 1px solid;
+    color: black;
+    
+ }
+ .selected-text {
+    
+    color: black;
+    
+ }
+
+ 
+
+ .no-dots {
+    list-style: none;
+ }
+
+ .no-padding {
+    padding-left: 0px;
+    padding-inline-start: 0px;
+    padding-right: 0px;
+ }
+
+ .no-margins {
+    margin: 0px;
+ }
+
+ .li-account-navi {
+    padding-left: 8px;
+    margin-bottom: 15px;
+ }
+
+ .card-text {
+    font-size: 13px;
+ }
+
+ .card-small-text {
+    font-size: 11px;
+ }
+
+ .btn-size {
+    height: 35px;
+    width: 130px;
+    border-color:  black;
+    margin-right: 1px;
+ }
+
+ .greenbar {
+    border-left: 3px solid;
+    border-left-color: green;
+    
+ }
+
+ .list-group-item {
+    border-radius: 0 !important;
+ }
+
+ .list-group {
+    border-radius: 0 !important;
+ }
+
+ .full-dropdown-menu {
+    width: 100vw;
+} 

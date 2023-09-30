@@ -2,7 +2,12 @@
 <html lang="en">
 <head>
    <meta charset="UTF-8">
-   <title>Title</title>
+   <title>Assignments</title>
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
+   <link href="../index.css" rel="stylesheet"/>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+
 </head>
 <body>
 <!-- <div id="root"></div> -->
@@ -11,223 +16,465 @@
     <tr>
  
      <!--Links of courses cell-->
-        <td valign="top">
-          <ul>
-             <li><a href="../profileselect.html">Account</a></li>
-             <li><a href="#">Dashboard</a></li>
-             <li><a href="../courses.html">Courses</a></li>
-             <li><a href="#">Calendar</a></li>
-             <li><a href="#">Inbox</a></li>
-             <li><a href="#">History</a></li>
-             <li><a href="#">Studio</a></li>
-             <li><a href="#">Commons</a></li>
-             <li><a href="#">Help</a></li>
-         </ul>
+     <td valign="top" class="d-none d-lg-table-cell sidebar-dimension bg-black" style="background-color: black; height: 100%;">
+        <ul class="list-group bg-black sidebar-dimension">
+           
+              <a href="../profile/index.html"><li class="padding-5 verdana-font list-group-item list-group-item-action bg-black"><i class="margin-5 fa-solid fa-user" style="color: white"></i> <br> Account</li></a>
+           
+              <a href="../dashboard.html"><li class="padding-5 verdana-font list-group-item list-group-item-action bg-black"><i class="margin-5 fa-solid fa-gauge" style="color: red"></i> <br> Dashboard</li></a>
+           
+              <a href="../home.html"><li class="padding-5 verdana-font list-group-item list-group-item-action bg-white" style="color: red;"><i class="margin-5 fa-solid fa-book" style="color: red"></i> <br> Courses</li></a>
+           
+              <a href="#"><li class="padding-5 verdana-font list-group-item list-group-item-action bg-black"><i class="margin-5 fa-solid fa-calendar" style="color: red"></i> <br> Calendar</li></a>
+           
+              <a href="#"><li class="padding-5 verdana-font list-group-item list-group-item-action bg-black"><i class="margin-5 fa-solid fa-inbox" style="color: red"></i> <br> Inbox</li></a>
+           
+              <a href="#"><li class="padding-5 verdana-font list-group-item list-group-item-action bg-black"><i class="margin-5 fa-solid fa-clock" style="color: red"></i><br> History</li></a>
+           
+              <a href="#"><li class="padding-5 verdana-font list-group-item list-group-item-action bg-black"><i class="margin-5 fa-solid fa-robot" style="color: red"></i><br> Studio</li></a>
+           
+              <a href="#"><li class="padding-5 verdana-font list-group-item list-group-item-action bg-black"><i class="margin-5 fa-solid fa-arrow-right-from-bracket" style="color: red"></i><br> Commons</li></a>
+           
+              <a href="#"><li class="padding-5 verdana-font list-group-item list-group-item-action bg-black"><i class="margin-5 fa-solid fa-circle-question" style="color: red"></i><br> Help</li></a>
+       </ul>
+
+      </td>
+      
  
-        </td>
- 
- 
-     <!--Links of this course cell-->
-        <td valign="top">
-          <ul>
-             <li><a href="../home.html">Home</a></li>
-             <li><a href="#">Modules</a></li>
-             <li><a href="#">Piazza</a></li>
-             <li><a href="#">Zoom Meetings</a></li>
-             <li><a href="index.html">Assignments</a></li>
-             <li><a href="#">Quizzes</a></li>
-             <li><a href="../grades.html">Grades</a></li>
-             <li><a href="#">People</a></li>
-             <li><a href="#">Panopto Video</a></li>
-             <li><a href="#">Discussions</a></li>
-             <li><a href="#">Announcements</a></li>
-             <li><a href="#">Pages</a></li>
-             <li><a href="#">Files</a></li>
-             <li><a href="#">Rubrics</a></li>
-             <li><a href="#">Outcomes</a></li>
-             <li><a href="#">Collaborations</a></li>
-             <li><a href="#">Syllabus</a></li>
-             <li><a href="#">Settings</a></li>
-         </ul>
-
-
-        </td>
- 
- 
-     <!--Assignments cell-->
-        <td valign="top">
-
-          <input placeholder="Search for Assignments"/>
-          <button>Group</button>
-          <button>Assignment</button>
-          <select>
-            <option selected value="Edit Assignment Dates">
-                Edit Assignment Dates</option>
-            <option value="OTHER">Other</option>
-        </select>
-        <hr>
-
-        <h2>ASSIGNMENTS 40% of Total
-            <select>
-                <option selected value="EDIT">
-                    Edit</option>
-                <option value="SPEED">Speed Grader</option>
-                <option value="DUPLICATE">Duplicate</option>
-                <option value="DELETE">Delete</option>
-                <option value="MOVE">Move to...</option>
-                <option value="SEND">Send to...</option>
-                <option value="COPY">Copy to...</option>
-                <option value="COMMONS">Share to Commons</option>
-                
-            </select>
-        </h2> 
-
-        <ul>
-            <li><a href="edit.html">A1 - ENV + HTML</a> 
-                <br>
-                <a href="#">Multiple Modules</a> | Not available yet
-            </li>
-            <li><a href="edit.html">A2 - CSS + BOOTSTRAP</a> 
-                <br>
-                <a href="#">Multiple Modules</a> | Not available yet
-            </li>
-            <li><a href="edit.html">A3 - JS + REACT</a> 
-                <br>
-                <a href="#">Multiple Modules</a> | Not available yet
-            </li>
-            <li><a href="edit.html">A4 - STATE + REDUX</a> 
-                <br>
-                <a href="#">Multiple Modules</a> | Not available yet
-            </li>
-            <li><a href="edit.html">A5 - NODE + SESSION</a> 
-                <br>
-                <a href="#">Multiple Modules</a> | Not available yet
-            </li>
-            <li><a href="edit.html">A6 - MONGO + MONGOOSE</a> 
-                <br>
-                <a href="#">Multiple Modules</a> | Not available yet
-            </li>
-        </ul>
-
-
-
-
-
-
-
-
-
-
-
-
-        <h2>QUIZZES 10% of Total
-            <select>
-                <option selected value="EDIT">
-                    Edit</option>
-                <option value="SPEED">Speed Grader</option>
-                <option value="DUPLICATE">Duplicate</option>
-                <option value="DELETE">Delete</option>
-                <option value="MOVE">Move to...</option>
-                <option value="SEND">Send to...</option>
-                <option value="COPY">Copy to...</option>
-                <option value="COMMONS">Share to Commons</option>
-                
-            </select>
-        </h2> 
-
-        <ul>
-            <li><a href="#">Q1 - HTML</a> 
-                <br>
-                <a href="#">Multiple Modules</a> | Not available yet
-            </li>
-            <li><a href="#">Q2 - CSS</a> 
-                <br>
-                <a href="#">Multiple Modules</a> | Not available yet
-            </li>
-            <li><a href="#">Q3 - JS,ES6</a> 
-                <br>
-                <a href="#">Multiple Modules</a> | Not available yet
-            </li>
-            <li><a href="#">Q4 - NODE</a> 
-                <br>
-                <a href="#">Multiple Modules</a> | Not available yet
-            </li>
-            <li><a href="#">Q5 - MONGO</a> 
-                <br>
-                <a href="#">Multiple Modules</a> | Not available yet
-            </li>
-            
-        </ul>
-
-
-
-
-
-
-
-
-
-        <h2>EXAMS 20% of Total
-            <select>
-                <option selected value="EDIT">
-                    Edit</option>
-                <option value="SPEED">Speed Grader</option>
-                <option value="DUPLICATE">Duplicate</option>
-                <option value="DELETE">Delete</option>
-                <option value="MOVE">Move to...</option>
-                <option value="SEND">Send to...</option>
-                <option value="COPY">Copy to...</option>
-                <option value="COMMONS">Share to Commons</option>
-                
-            </select>
-        </h2> 
-
-        <ul>
-            <li><a href="#">Midterm</a> 
-                <br>
-                <a href="#">Multiple Modules</a> | Not available yet
-            </li>
-            <li><a href="#">Final</a> 
-                <br>
-                <a href="#">Multiple Modules</a> | Not available yet
-            </li>
-        </ul>
-
-
-
-
-
-
-
-
-
-
-
-        <h2>PROJECT 30% of Total
-            <select>
-                <option selected value="EDIT">
-                    Edit</option>
-                <option value="SPEED">Speed Grader</option>
-                <option value="DUPLICATE">Duplicate</option>
-                <option value="DELETE">Delete</option>
-                <option value="MOVE">Move to...</option>
-                <option value="SEND">Send to...</option>
-                <option value="COPY">Copy to...</option>
-                <option value="COMMONS">Share to Commons</option>
-                
-            </select>
-        </h2> 
-
-        <ul>
-            <li><a href="#">Project</a> 
-                <br>
-                <a href="#">Multiple Modules</a> | Not available yet
-            </li>
+      <td valign="top">
         
-        </ul>
+         <!--NAV BAR-->
+         <nav class="d-none d-lg-block" style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+            <div class="row no-margins">
+               <a href="#" class="col-1 mt-1 text-center"><i class="fa-solid fa-bars text-center" style="color: red; display: inline;"></i></a>
+               
+            
+               <ol class="breadcrumb col no-margins mt-1">
+                 <li class="breadcrumb-item"><a href="../home.html" style="color: red;">CS4550.12631.202410</a></li>
+                 <li class="breadcrumb-item active" aria-current="page" style="color: black;">Assignments</li>
+               </ol>
+
+               <button type="button" class="btn btn-secondary col-1 mt-1 me-2" style="height: 24px; color: black; background-color: lightgrey; --bs-btn-padding-y: 0px; --bs-btn-padding-x: 0px;">
+                <span><i class="fa-solid fa-glasses" style="color: black;"></i> <span class="d-none d-xl-table-cell" style="font-size: 10px;"> Student View</span></span></button>
 
 
-        </td>
+            </div>
+            
+         </nav>
+
+
+         <!--NAV BAR DARK < LG SCREENS-->
+         <nav class="d-lg-none" style="--bs-breadcrumb-divider: '>'; background-color: black;" aria-label="breadcrumb">
+            <div class="row no-margins pb-3 pt-3">
+
+               <div class="dropdown col-1 me-3">
+                  <a href="#" class="btn text-center"
+                  role="button" data-bs-toggle="dropdown">
+                     <i class="fa-solid fa-bars text-center fa-2x" style="color: white; display: inline;"></i></a>
+
+                     <!--BASE NAVIGATION-->
+                     <ul class="mt-3 dropdown-menu full-dropdown-menu navigation-dimension no-dots no-padding">
+                        <li class="li-account-navi mb-4"><a href="../dashboard.html" class="navigation-sidebar-text">
+                           <i class="margin-5 fa-solid fa-gauge" style="color: red"></i> Dashboard</a></li>
+                        <li class="li-account-navi mb-4"><a href="../profile/index.html" class="navigation-sidebar-text">
+                           <i class="margin-5 fa-solid fa-user" style="color: red"></i> Account</a></li>
+                        <li class="li-account-navi mb-4"><a href="../home.html" class="navigation-sidebar-text">
+                           <i class="margin-5 fa-solid fa-book" style="color: red"></i> Courses</a></li>
+                        <li class="li-account-navi mb-4"><a href="#" class="navigation-sidebar-text">
+                           <i class="margin-5 fa-solid fa-calendar" style="color: red"></i> Calendar</a></li>
+                        <li class="li-account-navi mb-4"><a href="#" class="navigation-sidebar-text">
+                           <i class="margin-5 fa-solid fa-inbox" style="color: red"></i> Inbox</a></li>
+                        <li class="li-account-navi mb-4"><a href="#" class="navigation-sidebar-text">
+                           <i class="margin-5 fa-solid fa-robot" style="color: red"></i> Studio</a></li>
+                        <li class="li-account-navi mb-4"><a href="#" class="navigation-sidebar-text">
+                           <i class="margin-5 fa-solid fa-arrow-right-from-bracket" style="color: red"></i> Commons</a></li>
+                        <li class="li-account-navi mb-4"><a href="#" class="navigation-sidebar-text">
+                           <i class="margin-5 fa-solid fa-clock" style="color: red"></i> History</a></li>
+                        <li class="li-account-navi"><a href="#" class="navigation-sidebar-text">
+                           <i class="margin-5 fa-solid fa-circle-question" style="color: red"></i> Help</a></li>
+                        
+                     </ul>
+               </div>
+
+
+               <div class="col no-margins mt-1 text-center" style="color: white;">
+                  <div style="font-size: 14px;">CS4550.12631.202410</div>
+                  <div style="font-size: 14px;">Assignments</div>
+               </div>
+               
+
+               <a class="col-1 mt-2 no-padding text-center" href="#"> <i class="fa-solid fa-glasses" style="color: white;"></i></a>
+
+
+               
+               <div class="dropdown col-1 me-3">
+                  <a href="#" class="btn text-center"
+                  role="button" data-bs-toggle="dropdown">
+                     <i class="fa-solid fa-chevron-down text-center" style="color: white; display: inline;"></i></a>
+                  
+                     <!--COURSE NAVIGATION-->
+                     <ul class="mt-4 dropdown-menu full-dropdown-menu navigation-dimension no-dots no-padding">
+                        <li class="li-account-navi"><a href="../home.html" class="navigation-sidebar-text">Home</a></li>
+                        <li class="li-account-navi"><a href="#" class="navigation-sidebar-text">Modules</a></li>
+                        <li class="li-account-navi"><a href="#" class="navigation-sidebar-text">Piazza</a></li>
+                        <li class="li-account-navi"><a href="#" class="navigation-sidebar-text">Zoom Meetings</a></li>
+                        <li class="li-account-navi selected"><a href="index.html" class="navigation-sidebar-text selected-text">Assignments</a></li>
+                        <li class="li-account-navi"><a href="#" class="navigation-sidebar-text">Quizzes</a></li>
+                        <li class="li-account-navi"><a href="../grades.html" class="navigation-sidebar-text">Grades</a></li>
+                        <li class="li-account-navi"><a href="#" class="navigation-sidebar-text">People</a></li>
+                        <li class="li-account-navi"><a href="#" class="navigation-sidebar-text">Panopto Video</a></li>
+                        <li class="li-account-navi"><a href="#" class="navigation-sidebar-text">Discussions</a></li>
+                        <li class="li-account-navi"><a href="#" class="navigation-sidebar-text">Announcements</a></li>
+                        <li class="li-account-navi"><a href="#" class="navigation-sidebar-text">Pages</a></li>
+                        <li class="li-account-navi"><a href="#" class="navigation-sidebar-text">Files</a></li>
+                        <li class="li-account-navi"><a href="#" class="navigation-sidebar-text">Rubrics</a></li>
+                        <li class="li-account-navi"><a href="#" class="navigation-sidebar-text">Outcomes</a></li>
+                        <li class="li-account-navi"><a href="#" class="navigation-sidebar-text">Collaborations</a></li>
+                        <li class="li-account-navi"><a href="#" class="navigation-sidebar-text">Syllabus</a></li>
+                        <li class="li-account-navi"><a href="#" class="navigation-sidebar-text">Settings</a></li>
+                     </ul>
+               </div>
+            </div>
+            
+         </nav>
+
+
+
+
+
+         <!--END NAV BAR END NAV BAR-->
+
+
+
+
+
+
+         <hr>
+
+         <table width="100%">
+           <tbody>
+           <tr>
+
+ 
+            <!--Links of this course cell-->
+            
+            <td valign="top" class="d-none d-lg-table-cell navigation-dimension" style="padding-left: 20px;">
+                           
+                <ul class="navigation-dimension no-dots no-padding">
+                   <li class="li-account-navi"><a href="../home.html" class="navigation-sidebar-text">Home</a></li>
+                   <li class="li-account-navi"><a href="#" class="navigation-sidebar-text">Modules</a></li>
+                   <li class="li-account-navi"><a href="#" class="navigation-sidebar-text">Piazza</a></li>
+                   <li class="li-account-navi"><a href="#" class="navigation-sidebar-text">Zoom Meetings</a></li>
+                   <li class="li-account-navi selected"><a href="index.html" class="navigation-sidebar-text selected-text">Assignments</a></li>
+                   <li class="li-account-navi"><a href="#" class="navigation-sidebar-text">Quizzes</a></li>
+                   <li class="li-account-navi"><a href="../grades.html" class="navigation-sidebar-text">Grades</a></li>
+                   <li class="li-account-navi"><a href="#" class="navigation-sidebar-text">People</a></li>
+                   <li class="li-account-navi"><a href="#" class="navigation-sidebar-text">Panopto Video</a></li>
+                   <li class="li-account-navi"><a href="#" class="navigation-sidebar-text">Discussions</a></li>
+                   <li class="li-account-navi"><a href="#" class="navigation-sidebar-text">Announcements</a></li>
+                   <li class="li-account-navi"><a href="#" class="navigation-sidebar-text">Pages</a></li>
+                   <li class="li-account-navi"><a href="#" class="navigation-sidebar-text">Files</a></li>
+                   <li class="li-account-navi"><a href="#" class="navigation-sidebar-text">Rubrics</a></li>
+                   <li class="li-account-navi"><a href="#" class="navigation-sidebar-text">Outcomes</a></li>
+                   <li class="li-account-navi"><a href="#" class="navigation-sidebar-text">Collaborations</a></li>
+                   <li class="li-account-navi"><a href="#" class="navigation-sidebar-text">Syllabus</a></li>
+                   <li class="li-account-navi"><a href="#" class="navigation-sidebar-text">Settings</a></li>
+                </ul>
+
+
+             </td>
+        
+        
+                <!--Assignments cell-->
+                <td valign="top">
+
+                <div>
+                    <input class="float-start form-control w-25" placeholder="Search for Assignment"/>
+                    
+                    
+                    <button class="float-end btn btn-light me-1" type="button"><i class="fa-solid fa-ellipsis-vertical"></i></button>
+                    <button class="float-end btn btn-danger me-1" type="button"><i class="fa-solid fa-plus"></i> Assignment</button>
+                    <button class="float-end btn btn-light me-1" type="button"><i class="fa-solid fa-plus"></i> Group</button>
+                    
+                    
+                    <div style="clear: both;"></div>
+                </div>
+                
+                <hr>
+
+
+
+
+                <div class="list-group me-4">
+                    <a href="#" class="list-group-item list-group-item-secondary" aria-current="true">
+                       <div>
+                          <i class="float-start fa-solid fa-grip-vertical mt-1 pe-1" style="color: darkslategray;"></i>
+                          <h5 class="float-start mb-1">Assignments</h5>
+                          <i class="float-end fa fa-ellipsis-v mt-1" aria-hidden="true" style="color: black; margin-left:15px;"></i>
+                          <i class="float-end fa-solid fa-plus mt-1" aria-hidden="true" style="color:black;"></i>
+                          <span class="float-end badge bg-light rounded-pill border border-dark me-2" style="font-weight: normal; color: black;">40% of Total</span>
+                          <div style="clear: both;"></div>
+                       </div> 
+                    </a>
+
+                    <div href="#" class="greenbar list-group-item list-group-item-action">
+                       <div>
+                          <i class="float-start fa-solid fa-grip-vertical mt-1 pe-1" style="line-height:50px; color: darkslategray;"></i>
+                          <i class="float-start fa-solid fa-file-pen mt-1 pe-2 ps-2" style="color: green;line-height:50px;"></i>
+                          
+                          <div class="float-start mb-1 ms-2">
+                            <a href="edit.html"><h6 class="no-margins" style="color: black;">A1 SETUP</h6></a>
+
+                            <div class="card-text" style="color: grey;">Week 0 - SETUP - Sep. 5th 2022 |</div>
+                            <div class="card-text" style="color: grey;"><b>Due</b> Sep. 18 2022, 11:59pm | 100pts</div>
+                          </div>
+                          
+                          <i class="float-end fa fa-ellipsis-v" aria-hidden="true" style="line-height:50px; color: black; margin-left:15px;"></i>
+                          <i class="float-end fa fa-check-circle" aria-hidden="true" style="line-height:50px; color: green;"></i>
+                          
+                          
+                          <div style="clear: both;"></div>
+                       </div> 
+                    </div>
+
+                    <div href="#" class="greenbar list-group-item list-group-item-action">
+                        <div>
+                           <i class="float-start fa-solid fa-grip-vertical mt-1 pe-1" style="line-height:50px; color: darkslategray;"></i>
+                           <i class="float-start fa-solid fa-file-pen mt-1 pe-2 ps-2" style="color: green;line-height:50px;"></i>
+                           <div class="float-start mb-1 ms-2">
+                            <a href="edit.html"><h6 class="no-margins" style="color: black;">A2 HTML</h6></a>
+                             <div class="card-text" style="color: grey;">Week 1 - HTML - Sep. 12th 2022 |</div>
+                             <div class="card-text" style="color: grey;"><b>Due</b> Sep. 25 2022, 11:59pm | 100pts</div>
+                           </div>
+                           
+                           <i class="float-end fa fa-ellipsis-v" aria-hidden="true" style="line-height:50px; color: black; margin-left:15px;"></i>
+                           <i class="float-end fa fa-check-circle" aria-hidden="true" style="line-height:50px; color: green;"></i>
+                           
+                           
+                           <div style="clear: both;"></div>
+                        </div> 
+                    </div>
+
+
+                     <div href="#" class="greenbar list-group-item list-group-item-action">
+                        <div>
+                           <i class="float-start fa-solid fa-grip-vertical mt-1 pe-1" style="line-height:50px; color: darkslategray;"></i>
+                           <i class="float-start fa-solid fa-file-pen mt-1 pe-2 ps-2" style="color: green;line-height:50px;"></i>
+                           <div class="float-start mb-1 ms-2">
+                            <a href="edit.html"><h6 class="no-margins" style="color: black;">A3 CSS</h6></a>
+                             <div class="card-text" style="color: grey;">Week 2 - CSS - Sep. 19th 2022 |</div>
+                             <div class="card-text" style="color: grey;"><b>Due</b> Oct. 2 2022, 11:59pm | 100pts</div>
+                           </div>
+                           
+                           <i class="float-end fa fa-ellipsis-v" aria-hidden="true" style="line-height:50px; color: black; margin-left:15px;"></i>
+                           <i class="float-end fa fa-check-circle" aria-hidden="true" style="line-height:50px; color: green;"></i>
+                           
+                           
+                           <div style="clear: both;"></div>
+                        </div> 
+                    </div>
+
+
+                     <div href="#" class="greenbar list-group-item list-group-item-action">
+                        <div>
+                           <i class="float-start fa-solid fa-grip-vertical mt-1 pe-1" style="line-height:50px; color: darkslategray;"></i>
+                           <i class="float-start fa-solid fa-file-pen mt-1 pe-2 ps-2" style="color: green;line-height:50px;"></i>
+                           <div class="float-start mb-1 ms-2">
+                            <a href="edit.html"><h6 class="no-margins" style="color: black;">A4 BOOTSTRAP</h6></a>
+                             <div class="card-text" style="color: grey;">Week 3 - Bootstrap - Sep. 26th 2022 |</div>
+                             <div class="card-text" style="color: grey;"><b>Due</b> Oct. 10 2022, 11:59pm | 100pts</div>
+                           </div>
+                           
+                           <i class="float-end fa fa-ellipsis-v" aria-hidden="true" style="line-height:50px; color: black; margin-left:15px;"></i>
+                           <i class="float-end fa fa-check-circle" aria-hidden="true" style="line-height:50px; color: green;"></i>
+                           
+                           
+                           <div style="clear: both;"></div>
+                        </div> 
+                    </div>
+
+
+                     <div href="#" class="greenbar list-group-item list-group-item-action">
+                        <div>
+                           <i class="float-start fa-solid fa-grip-vertical mt-1 pe-1" style="line-height:50px; color: darkslategray;"></i>
+                           <i class="float-start fa-solid fa-file-pen mt-1 pe-2 ps-2" style="color: green;line-height:50px;"></i>
+                           <div class="float-start mb-1 ms-2">
+                            <a href="edit.html"><h6 class="no-margins" style="color: black;">A5 JAVASCRIPT</h6></a>
+                             <div class="card-text" style="color: grey;">Week 4 - JavaScript - Oct. 3rd 2022 |</div>
+                             <div class="card-text" style="color: grey;"><b>Due</b> Oct. 16 2022, 11:59pm | 100pts</div>
+                           </div>
+                           
+                           <i class="float-end fa fa-ellipsis-v" aria-hidden="true" style="line-height:50px; color: black; margin-left:15px;"></i>
+                           <i class="float-end fa fa-check-circle" aria-hidden="true" style="line-height:50px; color: green;"></i>
+                           
+                           
+                           <div style="clear: both;"></div>
+                        </div> 
+                    </div>
+
+                     <div href="#" class="greenbar list-group-item list-group-item-action">
+                        <div>
+                           <i class="float-start fa-solid fa-grip-vertical mt-1 pe-1" style="line-height:50px; color: darkslategray;"></i>
+                           <i class="float-start fa-solid fa-file-pen mt-1 pe-2 ps-2" style="color: green;line-height:50px;"></i>
+                           <div class="float-start mb-1 ms-2">
+                            <a href="edit.html"><h6 class="no-margins" style="color: black;">A6 REACT</h6></a>
+                             <div class="card-text" style="color: grey;">Week 5 - React - Oct. 10th 2022 |</div>
+                             <div class="card-text" style="color: grey;"><b>Due</b> Oct. 23 2022, 11:59pm | 100pts</div>
+                           </div>
+                           
+                           <i class="float-end fa fa-ellipsis-v" aria-hidden="true" style="line-height:50px; color: black; margin-left:15px;"></i>
+                           <i class="float-end fa fa-check-circle" aria-hidden="true" style="line-height:50px; color: green;"></i>
+                           
+                           
+                           <div style="clear: both;"></div>
+                        </div> 
+                    </div>
+                    
+
+
+                 </div>
+
+                
+
+
+                 <br>
+                 <br>
+                 
+
+                 <div class="list-group me-4">
+                    <a href="#" class="list-group-item list-group-item-secondary" aria-current="true">
+                       <div>
+                          <i class="float-start fa-solid fa-grip-vertical mt-1 pe-1" style="color: darkslategray;"></i>
+                          <h5 class="float-start mb-1">Quizzes</h5>
+                          <i class="float-end fa fa-ellipsis-v mt-1" aria-hidden="true" style="color: black; margin-left:15px;"></i>
+                          <i class="float-end fa-solid fa-plus mt-1" aria-hidden="true" style="color:black;"></i>
+                          <span class="float-end badge bg-light rounded-pill border border-dark me-2" style="font-weight: normal; color: black;">20% of Total</span>
+                          <div style="clear: both;"></div>
+                       </div> 
+                    </a>
+
+                    <div href="#" class="greenbar list-group-item list-group-item-action">
+                       <div>
+                          <i class="float-start fa-solid fa-grip-vertical mt-1 pe-1" style="line-height:50px; color: darkslategray;"></i>
+                          <i class="float-start fa-solid fa-file-pen mt-1 pe-2 ps-2" style="color: green;line-height:50px;"></i>
+                          
+                          <div class="float-start mb-1 ms-2">
+                            <a href="edit.html"><h6 class="no-margins" style="color: black;">Q1 - HTML</h6></a>
+
+                            
+                          </div>
+                          
+                          <i class="float-end fa fa-ellipsis-v" aria-hidden="true" style="line-height:50px; color: black; margin-left:15px;"></i>
+                          <i class="float-end fa fa-check-circle" aria-hidden="true" style="line-height:50px; color: green;"></i>
+                          
+                          
+                          <div style="clear: both;"></div>
+                       </div> 
+                    </div>
+
+                    <div href="#" class="greenbar list-group-item list-group-item-action">
+                        <div>
+                           <i class="float-start fa-solid fa-grip-vertical mt-1 pe-1" style="line-height:50px; color: darkslategray;"></i>
+                           <i class="float-start fa-solid fa-file-pen mt-1 pe-2 ps-2" style="color: green;line-height:50px;"></i>
+                           <div class="float-start mb-1 ms-2">
+                            <a href="edit.html"><h6 class="no-margins" style="color: black;">Q2 - CSS</h6></a>
+                             
+                             
+                           </div>
+                           
+                           <i class="float-end fa fa-ellipsis-v" aria-hidden="true" style="line-height:50px; color: black; margin-left:15px;"></i>
+                           <i class="float-end fa fa-check-circle" aria-hidden="true" style="line-height:50px; color: green;"></i>
+                           
+                           
+                           <div style="clear: both;"></div>
+                        </div> 
+                    </div>
+
+
+                     <div href="#" class="greenbar list-group-item list-group-item-action">
+                        <div>
+                           <i class="float-start fa-solid fa-grip-vertical mt-1 pe-1" style="line-height:50px; color: darkslategray;"></i>
+                           <i class="float-start fa-solid fa-file-pen mt-1 pe-2 ps-2" style="color: green;line-height:50px;"></i>
+                           <div class="float-start mb-1 ms-2">
+                            <a href="edit.html"><h6 class="no-margins" style="color: black;">Q3 - JS,ES6</h6></a>
+                            
+                             
+                           </div>
+                           
+                           <i class="float-end fa fa-ellipsis-v" aria-hidden="true" style="line-height:50px; color: black; margin-left:15px;"></i>
+                           <i class="float-end fa fa-check-circle" aria-hidden="true" style="line-height:50px; color: green;"></i>
+                           
+                           
+                           <div style="clear: both;"></div>
+                        </div> 
+                    </div>
+
+
+                     <div href="#" class="greenbar list-group-item list-group-item-action">
+                        <div>
+                           <i class="float-start fa-solid fa-grip-vertical mt-1 pe-1" style="line-height:50px; color: darkslategray;"></i>
+                           <i class="float-start fa-solid fa-file-pen mt-1 pe-2 ps-2" style="color: green;line-height:50px;"></i>
+                           <div class="float-start mb-1 ms-2">
+                            <a href="edit.html"><h6 class="no-margins" style="color: black;">Q4 - NODE</h6></a>
+                            
+                             
+                           </div>
+                           
+                           <i class="float-end fa fa-ellipsis-v" aria-hidden="true" style="line-height:50px; color: black; margin-left:15px;"></i>
+                           <i class="float-end fa fa-check-circle" aria-hidden="true" style="line-height:50px; color: green;"></i>
+                           
+                           
+                           <div style="clear: both;"></div>
+                        </div> 
+                    </div>
+
+
+                     <div href="#" class="greenbar list-group-item list-group-item-action">
+                        <div>
+                           <i class="float-start fa-solid fa-grip-vertical mt-1 pe-1" style="line-height:50px; color: darkslategray;"></i>
+                           <i class="float-start fa-solid fa-file-pen mt-1 pe-2 ps-2" style="color: green;line-height:50px;"></i>
+                           <div class="float-start mb-1 ms-2">
+                            <a href="edit.html"><h6 class="no-margins" style="color: black;">Q5 - MONGO</h6></a>
+                        
+                           </div>
+                           
+                           <i class="float-end fa fa-ellipsis-v" aria-hidden="true" style="line-height:50px; color: black; margin-left:15px;"></i>
+                           <i class="float-end fa fa-check-circle" aria-hidden="true" style="line-height:50px; color: green;"></i>
+                           
+                           
+                           <div style="clear: both;"></div>
+                        </div> 
+                    </div>
+
+                
+                    
+
+
+                 </div>
+
+                
+
+
+
+                </td>
+
+
+
+
+            </tr>
+            </tbody>
+        </table>   
+
+
+
+
+
+
+
+
+
+
+    </td>
 
     </tr>
     </tbody>
