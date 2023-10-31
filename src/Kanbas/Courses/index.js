@@ -16,9 +16,9 @@ import Grades from "./Grades";
 
 
 
-function Courses() {
+function Courses({courses}) {
   const { courseId } = useParams();
-  const course = db.courses.find((course) => course._id === courseId);
+  const course = courses.find((course) => course._id === courseId);
   const { pathname } = useLocation();
   const redText = { color: "red" };
   const links = ["Account", "Dashboard", "Courses", "Calendar","Inbox","History","Studio","Commons","Help"];

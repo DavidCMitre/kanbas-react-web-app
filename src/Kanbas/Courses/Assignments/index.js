@@ -4,13 +4,23 @@ import db from "../../Database";
 import "../../index.css";
 import {FaCircleCheck, FaEllipsisVertical, FaPlus} from 'react-icons/fa6';
 import {FaGripVertical, FaFilePen} from 'react-icons/fa6';
+import { useSelector, useDispatch } from "react-redux";
+import { deleteAssignment } from "./assignmentsReducer";
 
 
 function Assignments() {
   const { courseId } = useParams();
-  const assignments = db.assignments;
+  const assignments = useSelector((state) => state.assignmentsReducer.assignments);
+  
+  const dispatch = useDispatch();
   const courseAssignments = assignments.filter(
     (assignment) => assignment.course === courseId);
+
+
+
+  
+  
+    
   return (
     <div>
 
@@ -20,7 +30,10 @@ function Assignments() {
             
             
             <button className="float-end btn btn-light me-1" type="button"><FaEllipsisVertical /></button>
-            <button className="float-end btn btn-danger me-1" type="button"><FaPlus /> Assignment</button>
+            <Link
+                to={`/Kanbas/Courses/${courseId}/Assignments/Create`}>
+                  <button className="float-end btn btn-danger me-1" type="button"><FaPlus /> Assignment</button>
+            </Link>
             <button className="float-end btn btn-light me-1" type="button"><FaPlus/>Group</button>
             
             
@@ -63,6 +76,16 @@ function Assignments() {
 
                             <FaEllipsisVertical className="float-end fa" aria-hidden="true" style={{"line-height":"50px", "color": "black", "margin-left":"15px"}}/>
                             <FaCircleCheck className="float-end fa" aria-hidden="true" style={{'line-height':'50px', 'color': 'green'}}/>
+                            <button className="float-end mt-1 me-2 btn btn-danger btn-sm pt-0 pb-0"
+                              onClick={() => 
+                              {
+                                let result = window.confirm("Are you sure you would like to delete this assignment?");
+                                if (result === true) {
+                                  dispatch(deleteAssignment(assignment._id));
+                                }
+                              }}>
+                              Delete
+                            </button>
 
                             <div style={{"clear": "both"}}></div>
                             </div>
