@@ -22,7 +22,9 @@ function AssignmentEditor() {
 
   const tempAssign = {...assignments.find((a) => a._id === assignmentId)};
   useEffect(() => {
-    dispatch(selectAssignment(tempAssign));
+    if (assignmentId !== 'Create') {
+      dispatch(selectAssignment(tempAssign));
+    }
   }, []);
 
   console.log(assignment);
