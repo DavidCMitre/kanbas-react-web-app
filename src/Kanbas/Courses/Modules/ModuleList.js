@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import db from "../../Database";
 import {FaGripVertical} from 'react-icons/fa6';
@@ -9,10 +9,41 @@ import {
   deleteModule,
   updateModule,
   setModule,
+  setModules,
 } from "./modulesReducer";
+import { findModulesForCourse, createModule, deleteModuleClient, updateModuleClient } from "./client";
 
 function ModuleList() {
   const { courseId } = useParams();
+  useEffect(() => {
+    findModulesForCourse(courseId)
+      .then((modules) =>
+        dispatch(setModules(modules))
+    );
+  }, [courseId]);
+
+
+  const handleAddModule = () => {
+    createModule(courseId, module).then((module) => {
+      dispatch(addModule(module));
+    });
+  };
+
+
+  const handleDeleteModule = (moduleId) => {
+    deleteModuleClient(moduleId).then((status) => {
+      dispatch(deleteModule(moduleId));
+    });
+  };
+
+
+
+  const handleUpdateModule = async () => {
+    const status = await updateModuleClient(module);
+    dispatch(updateModule(module));
+  };
+
+
   const modules = useSelector((state) => state.modulesReducer.modules);
   const module = useSelector((state) => state.modulesReducer.module);
   const dispatch = useDispatch();
@@ -25,8 +56,8 @@ function ModuleList() {
                 <input className="form-control float-start w-75 me-1 mb-1" value={module.name}
                   onChange={(e) => dispatch(setModule({ ...module, name: e.target.value }))}
                 />
-                <button onClick={() => dispatch(addModule({ ...module, course: courseId }))} className="float-start btn btn-success w-10 mb-1">Add</button>
-                <button onClick={() => dispatch(updateModule(module))} className="float-start btn btn-primary w-10 mb-1 ms-1">
+                <button onClick={handleAddModule} className="float-start btn btn-success w-10 mb-1">Add</button>
+                <button onClick={handleUpdateModule} className="float-start btn btn-primary w-10 mb-1 ms-1">
                       Update
                 </button>
               </span>
@@ -57,7 +88,7 @@ function ModuleList() {
                            <FaCircleCheck className="float-end fa mt-1 me-2" aria-hidden="true" style={{"color": "green"}}/>
                            
                            <button className="float-end mt-1 me-2 btn btn-danger btn-sm pt-0 pb-0"
-                              onClick={() => dispatch(deleteModule(module._id))}>
+                              onClick={() => handleDeleteModule(module._id)}>
                               Delete
                           </button>
                           <button className="float-end mt-1 me-2 btn btn-success btn-sm pt-0 pb-0"
