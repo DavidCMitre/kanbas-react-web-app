@@ -71,6 +71,11 @@ function KanbasNavigation() {
             ))}
                         
         </ul>
+        <br/>
+        <Link to={`/Kanbas/signin`}>LINK TO SIGN IN</Link>
+        <br/>
+        <br/>
+        <Link to={`/Kanbas/signup`}>LINK TO SIGN UP</Link>
     </div>
 
   );
